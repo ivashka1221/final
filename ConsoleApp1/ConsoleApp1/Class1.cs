@@ -9,7 +9,7 @@ namespace simple_calc
     {
         static void Main(string[] args)
         {
-            
+           
                 double a;
                 double b;
                 double total;
@@ -44,12 +44,16 @@ namespace simple_calc
 
                 else if (oper == '/')
                 {
-                    
-                    
+                    if (b != 0)
+                    {
                         total = a / b;
                         Console.WriteLine("Деление " + a + " на " + b + " равно " + total + ".");
-                   
-                   
+                    }
+                    else
+                    {
+
+                        Console.WriteLine("Ошибка - Деление на ноль ");
+                    }
                 }
                
             
